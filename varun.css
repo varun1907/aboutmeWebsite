@@ -1,0 +1,163 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+nav,footer{
+	display: block;
+}
+body{
+	text-align: center;
+	background-color: #262626;
+	color:white;
+	background-image: url("http://wallscollection.net/wp-content/uploads/2016/12/Amazing-Background-Images-For-Websites-.jpg");
+}
+#big_wrapper{
+	text-align: left;
+}
+#header{
+		text-align: right;
+}
+nav li{
+	margin:20px;
+	list-style: none;
+	display: inline-block;
+	padding: 20px;
+
+
+}
+nav li a{
+	color: white;
+	text-decoration: none;
+}
+
+h4{
+	font-family: Tamoha;
+	padding-bottom: 40px;
+	font-size: 40px;
+	text-align: center;
+
+}
+p{
+	padding:20px;
+	font-size: 20px;
+
+}
+ 
+#main_section{
+	padding: 10px;
+}
+
+#about{
+	padding:50px;
+	background-color:  rgba(26,26,26,.75);
+	margin-top: 10px;
+	margin-bottom: 50px;
+
+}
+#about img{
+	height:200px;
+	width: 200px;
+	border-radius: 50%;
+	float:left;
+	margin-left:100px;
+
+}
+#about p{
+	text-align: right;
+	margin-left: 350px;
+	padding-right: 50px;
+}
+
+#skills{
+	margin-bottom: 50px;
+}
+#skills ul{
+
+    text-align: right;
+	margin-left: 350px;
+	padding-right: 150px;
+
+}
+#skills ul li{
+	list-style: none;
+	font-size:20px;
+}
+#skills p{
+		margin-left:100px;
+	float: left;
+
+}
+#list{
+	margin-left: 300px;
+	text-align: right;
+}
+#skills_inline_display{
+	display: inline;
+}
+
+
+
+
+
+#resume{
+	height:360.8px;
+	background-color:  rgba(26,26,26,.75);
+}
+#resume h4{
+	padding-top: 40px;
+}
+#resume p{
+	margin-top: 50px;
+	margin-left:50px;
+}
+#resume p a{
+	color:white;
+}
+
+
+
+
+#the_footer{
+	background-color:  rgba(26,26,26,.75);
+	height:200px;
+	border-top:1px solid white;
+	text-align: center;
+}
+#the_footer p{
+	font-size: 15px;
+	margin-top: 20px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  margin-top:40px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #3B5998;
+  color: white;
+}
+.fa-github{
+	background: black;
+  color: white;
+}
