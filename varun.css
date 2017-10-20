@@ -19,10 +19,14 @@ body{
 		text-align: right;
 }
 nav li{
+
 	margin:20px;
 	list-style: none;
 	display: inline-block;
 	padding: 20px;
+	border: 1.5px solid white;
+	border-radius: 10%;
+	background-color: #6D695E;
 
 
 }
@@ -49,6 +53,7 @@ p{
 }
 
 #about{
+	height: 500px;
 	padding:50px;
 	background-color:  rgba(26,26,26,.75);
 	margin-top: 10px;
@@ -56,49 +61,38 @@ p{
 
 }
 #about img{
-	height:200px;
-	width: 200px;
-	border-radius: 50%;
+	height:400px;
+	width: 400px;
 	float:left;
+	border-radius: 50%;
 	margin-left:100px;
 
 }
+
 #about p{
-	text-align: right;
-	margin-left: 350px;
+	margin-left: 850px; 
 	padding-right: 50px;
 }
 
 #skills{
+	height:auto;
 	margin-bottom: 50px;
 }
 #skills ul{
 
-    text-align: right;
 	margin-left: 350px;
 	padding-right: 150px;
-
 }
 #skills ul li{
-	list-style: none;
 	font-size:20px;
 }
 #skills p{
 		margin-left:100px;
-	float: left;
-
+	    float: left;
 }
 #list{
 	margin-left: 300px;
-	text-align: right;
 }
-#skills_inline_display{
-	display: inline;
-}
-
-
-
-
 
 #resume{
 	height:360.8px;
@@ -116,6 +110,19 @@ p{
 }
 
 
+#contact{
+	height:500px;
+}
+#contact p{
+	margin-right: 500px;
+	float: left;
+}
+.form-group{
+	margin-right: 50px;
+	text-align: right;
+	margin-top:5px;
+	
+}
 
 
 #the_footer{
@@ -137,6 +144,8 @@ p{
   margin: 5px 2px;
   border-radius: 50%;
   margin-top:40px;
+      box-shadow: 5px 5px 5px #888888;
+
 }
 .fa:hover {
     opacity: 0.7;
