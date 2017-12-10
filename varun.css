@@ -3,24 +3,32 @@
 	padding:0px;
 }
 
-nav,footer{
+header,footer{
 	display: block;
 }
 body{
+
 	text-align: center;
 	background-color: #262626;
 	color:white;
-	background-image: url("http://wallscollection.net/wp-content/uploads/2016/12/Amazing-Background-Images-For-Websites-.jpg");
+	background-image: url("http://wallscollection.net/wp-content/uploads/2016/12/Amazing-Background-Images-For-Websites-.jpg")no-repeat center fixed (same shorthand parameter, if any);
+    background-size: cover;
+
 }
 #big_wrapper{
 	text-align: left;
+	width:100%;
 }
-#header{
+#the_header{
+		margin: 10px;
 		text-align: right;
-}
-nav li{
+		z-index: 10;
+		background-color:  rgba(26,26,26,.75);
 
-	margin:20px;
+}
+header li{
+
+	margin:30px;
 	list-style: none;
 	display: inline-block;
 	padding: 20px;
@@ -30,7 +38,7 @@ nav li{
 
 
 }
-nav li a{
+header li a{
 	color: white;
 	text-decoration: none;
 }
@@ -40,63 +48,69 @@ h4{
 	padding-bottom: 40px;
 	font-size: 40px;
 	text-align: center;
-
 }
 p{
 	padding:20px;
 	font-size: 20px;
 
 }
- 
-#main_section{
-	padding: 10px;
-}
+
+
 
 #about{
-	height: 500px;
-	padding:50px;
-	background-color:  rgba(26,26,26,.75);
-	margin-top: 10px;
-	margin-bottom: 50px;
+	padding-top: 50px;
+	margin: 10px;
+		
 
 }
 #about img{
 	height:400px;
 	width: 400px;
-	float:left;
 	border-radius: 50%;
-	margin-left:100px;
+	margin-left:auto;
 
 }
 
 #about p{
-	margin-left: 850px; 
-	padding-right: 50px;
+	text-align: left;
+	overflow: auto;
+
 }
 
+
+
+
+
 #skills{
-	height:auto;
+	margin: 10px;
 	margin-bottom: 50px;
+	color:black;
+	background-color:  rgba(26,26,26,.75);
 }
 #skills ul{
 
-	margin-left: 350px;
-	padding-right: 150px;
+text-align: left;
 }
 #skills ul li{
 	font-size:20px;
 }
-#skills p{
-		margin-left:100px;
-	    float: left;
-}
-#list{
-	margin-left: 300px;
-}
 
+.skill_boxes{
+	text-align: center;
+	vertical-align: middle;
+	align-content: center;
+	margin:10px;
+	height:60px;
+	width:150px;
+	float:left;
+}
+.skill_boxes:hover{
+	opacity: 0.5;
+}
 #resume{
-	height:360.8px;
-	background-color:  rgba(26,26,26,.75);
+	margin: 10px;
+		
+
 }
 #resume h4{
 	padding-top: 40px;
@@ -111,25 +125,20 @@ p{
 
 
 #contact{
-	height:500px;
+	margin: 10px;
+	background-color:  rgba(26,26,26,.75);
 }
-#contact p{
-	margin-right: 500px;
-	float: left;
-}
-.form-group{
-	margin-right: 50px;
-	text-align: right;
-	margin-top:5px;
-	
-}
+
+
+
 
 
 #the_footer{
-	background-color:  rgba(26,26,26,.75);
-	height:200px;
+	margin: 10px;
 	border-top:1px solid white;
 	text-align: center;
+		
+
 }
 #the_footer p{
 	font-size: 15px;
@@ -144,7 +153,7 @@ p{
   margin: 5px 2px;
   border-radius: 50%;
   margin-top:40px;
-      box-shadow: 5px 5px 5px #888888;
+  box-shadow: 5px 5px 5px #888888;
 
 }
 .fa:hover {
