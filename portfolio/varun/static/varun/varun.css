@@ -1,0 +1,187 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+header,footer{
+	display: block;
+}
+body{
+
+	text-align: center;
+	background-color: #262626;
+	color:white;
+	background-image: url("http://wallscollection.net/wp-content/uploads/2016/12/Amazing-Background-Images-For-Websites-.jpg")no-repeat center fixed (same shorthand parameter, if any);
+    background-size: cover;
+
+}
+#big_wrapper{
+	text-align: left;
+	width:100%;
+}
+#the_header{
+		margin: 10px;
+		text-align: right;
+		z-index: 10;
+		background-color:  rgba(26,26,26,.75);
+
+}
+header li{
+
+	margin:30px;
+	list-style: none;
+	display: inline-block;
+	padding: 20px;
+	border: 1.5px solid white;
+	border-radius: 10%;
+	background-color: #6D695E;
+
+
+}
+header li a{
+	color: white;
+	text-decoration: none;
+}
+
+h4{
+	font-family: Tamoha;
+	padding-bottom: 40px;
+	font-size: 40px;
+	text-align: center;
+}
+p{
+	padding:20px;
+	font-size: 20px;
+
+}
+
+.black_text{
+	color:black;
+}
+.white_text{
+	color:white;
+}
+#about{
+	padding-top: 40px;
+	margin: 10px;
+	background-color: #F2F2EC;
+}
+h3{
+	text-align: center;
+}
+#about img{
+	height:400px;
+	width: 400px;
+	border-radius: 50%;
+	margin:auto;
+
+}
+
+#about p{
+	text-align: left;
+	overflow: auto;
+}
+
+
+
+
+
+#skills{
+	margin: 10px;
+	background-color:  rgba(26,26,26,.75);
+}
+#skills h4{
+	padding-top: 40px;
+}
+.skill_boxes{
+	text-align: center;
+	vertical-align: middle;
+	align-content: center;
+	margin:10px;
+	height:60px;
+	width:150px;
+	opacity: 0.7;
+	float:left;
+}
+.skill_boxes:hover{
+	opacity: 1;
+	font-size: 1.1em;
+	box-shadow: 5px 5px 5px #888888
+}
+
+
+#resume{
+	margin: 10px;
+		background-color: #F2F2EC;
+
+}
+#resume h4{
+	padding-top: 40px;
+}
+#resume p{
+	margin-top: 50px;
+	margin-left:50px;
+}
+#resume p a{
+	color:white;
+}
+
+
+#contact{
+
+	margin: 10px;
+	background-color:  rgba(26,26,26,.75);
+}
+
+#contact h4{
+	padding-top: 40px;
+}
+
+
+
+#the_footer{
+	margin: 10px;
+	border-top:1px solid white;
+	text-align: center;
+	background-color: #F2F2EC;
+
+}
+#the_footer p{
+	font-size: 15px;
+	margin-top: 20px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  margin-top:40px;
+  box-shadow: 5px 5px 5px #888888;
+
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #3B5998;
+  color: white;
+}
+.fa-github{
+	background: black;
+  color: white;
+}
