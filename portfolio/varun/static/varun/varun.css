@@ -12,12 +12,12 @@ body{
 	background-color: #262626;
 	color:white;
 	background-image: url("http://wallscollection.net/wp-content/uploads/2016/12/Amazing-Background-Images-For-Websites-.jpg")no-repeat center fixed (same shorthand parameter, if any);
-    background-size: cover;
+  background-size: cover;
 
 }
 #big_wrapper{
 	text-align: left;
-	width:100%;
+
 }
 #the_header{
 		margin: 10px;
@@ -102,17 +102,22 @@ h3{
 	width:150px;
 	opacity: 0.7;
 	float:left;
+	position: relative;
+	top: 0;
+	transition: top ease 0.5s;
 }
 .skill_boxes:hover{
 	opacity: 1;
 	font-size: 1.1em;
-	box-shadow: 5px 5px 5px #888888
+	box-shadow: 3px 3px 3px #888888;
+	top: -10px;
+
 }
 
 
 #resume{
 	margin: 10px;
-		background-color: #F2F2EC;
+	background-color: #F2F2EC;
 
 }
 #resume h4{
@@ -126,6 +131,26 @@ h3{
 	color:white;
 }
 
+
+
+#projects{
+	margin: 10px;
+	background-color:   rgba(26,26,26,.75);
+
+}
+#projects_box:hover{
+	font-size: 1.2em;
+
+}
+
+.test {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+.test:hover {
+  top: -10px;
+}
 
 #contact{
 

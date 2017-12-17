@@ -1,0 +1,23 @@
+
+
+{% extends 'varun/base.html' %}
+
+
+
+{% block header %}
+
+{% if messages %}
+<div class="row">
+ <div class="col-sm-12 ">
+ {% for message in messages %}
+
+   <div{% if message.tags == "error" %} class="alert alert-danger alert-dismissable" {% endif %}>
+   <a href="{% url 'varun:index' %}" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+     <strong>Error</strong>{{ message }}</div>
+
+ {% endfor %}
+</div>
+</div>
+{% endif %}
+
+{% endblock %}

@@ -3,7 +3,7 @@ from .models import Query
 from .forms import SubmitForm
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
-
+from django.contrib import messages
 # Create your views here.
 def index(request):
     form=SubmitForm()
@@ -21,10 +21,12 @@ def SubmitView(request):
                  city=request.POST.get('city')
                  query_obj=Query(name=name,email=email,question=question,city=city)
                  query_obj.save()
-                 return redirect('varun:index')
+                 messages.success(request , 'Thanks. Your response has been submitted')
+                 return redirect('varun:thank_you')
 
              else:
-                 return redirect('varun:index')
+                 messages.error(request, 'Oops! There has been a problem Kindly check data')
+                 return redirect('varun:error')
 
 
         else:
@@ -35,9 +37,11 @@ def SubmitView(request):
 
     #return HttpResponse("<h3>hey</h3>")
 
+def ThankView(request):
+    return render(request,'varun/thank_you.html')
 
-
-
+def ErrorView(request):
+    return render(request,'varun/error.html')
 
 
 
