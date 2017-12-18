@@ -15,222 +15,185 @@
 <body>
 
 
-<div id="big_wrapper">
+<div class="container-fluid">
+
+		<header id="the_header">
+		    <ul id="foo">
+				    <li><a onclick="initScroll('about'); return false;" href="#">ABOUT</a></li>
+						<li><a onclick="initScroll('skills'); return false;" href="#">SKILLS</a></li>
+						<li><a onclick="initScroll('resume'); return false;" href="#">RESUME</a></li>
+						<li><a onclick="initScroll('projects'); return false;" href="#">PROJECTS</a></li>
+						<li><a onclick="initScroll('contact'); return false;" href="#">CONTACT</a></li>
+				</ul>
+		</header>
 
 
- <header id="the_header">
-	<ul id="foo">
-	<li><a onclick="initScroll('about'); return false;" href="#">ABOUT</a></li>
-	<li><a onclick="initScroll('skills'); return false;" href="#">SKILLS</a></li>
-	<li><a onclick="initScroll('resume'); return false;" href="#">RESUME</a></li>
-	<li><a onclick="initScroll('projects'); return false;" href="#">PROJECTS</a></li>
-	<li><a onclick="initScroll('contact'); return false;" href="#">CONTACT</a></li>
-	</ul>
- </header>
 
+    <div id ="main_section">
 
-
- <div id ="main_section">
-
- 	<div id="about" class ="black_text">
-
-	<!--	<img src="static/varun/images/back.jpg" style="display:block;width:100%;height:auto"/>-->
-			<img src="static/varun/images/back2.jpg" class="ig"/>
-				<div class="col-sm-6 text-center">
-		      	<button type="button" onclick="scrollWin()" class="btn btn-dark" id="arrow" style="margin-bottom:5px;">Click Me</button>
-	    </div>
-			<div class="row">
- 			<div class="col-sm-12">
- 	       <h4>Something you should know</h4>
-			</div>
-			</div>
-			<div class="row">
-			    <div class="col-sm-5 col-xs-5">
-			      <img src="static/varun/images/IMG_20170319_234438.jpg" id="bg-img" class="rounded-circle" alt="Responsive image"/>
-			    </div>
-			    <div class="col-sm-7 col-xs-7">
+ 	      <div id="about" class ="black_text">
+			      <img src="static/varun/images/back2.jpg" class="ig"/>
+				    <div class="col-sm-6 text-center">
+		      	    <button type="button" onclick="scrollWin()" class="btn btn-dark" id="arrow">Click Me</button>
+	          </div>
 			      <div class="row">
-			         <div class="col-sm-12 col-xs-12" style="margin-bottom: 20px;">
-			             <h3>Field Of Interests</h3>
-			         </div>
-			       </div>
-			       <div class="row">
-			          <div class="col-sm-4 col-xs-4" style="font-family: Georgia;font-weight: bold; font-size: 1.5em;color:black">Machine Learning
+ 			          <div class="col-sm-12">
+ 	       				    <h4>Something you should know</h4>
+								</div>
+						</div>
+						<div class="row">
+			          <div class="col-sm-5 col-xs-5">
+			      		    <img src="static/varun/images/IMG_20170319_234438.jpg" id="bg-img" class="rounded-circle" alt="Responsive image"/>
 			          </div>
-			          <div class="col-sm-4 col-xs-4" style="font-family: Georgia;font-weight: bold; font-size: 1.5em">Data Analysis
-			          </div>
-			          <div class="col-sm-4 col-xs-4" style="font-family: Georgia;font-weight: bold; font-size: 1.5em">Full Stack Development
-			          </div>
-		           </div>
-		           <p style="font-family: Oswald">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-								 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-								 type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-								 typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-								  Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-		        </div>
-		     </div>
-    </div>
-
-
-    <div id="skills" class ="white_text">
-    <div class="row">
-        <div class="col-sm-12 col-xs-12">
-             <h4>Checkout my skills</h4>
+			    			<div class="col-sm-7 col-xs-7">
+			      		    <div class="row">
+			                  <div class="col-sm-12 col-xs-12" style="margin-bottom: 20px;">
+			                      <h3>Field Of Interests</h3>
+			         					</div>
+			       				</div>
+			       				<div class="row">
+			          		    <div class="col-sm-4 col-xs-4 interest">Machine Learning
+			          				</div>
+			          				<div class="col-sm-4 col-xs-4 interest">Data Analysis
+			          				</div>
+			          				<div class="col-sm-4 col-xs-4 interest">Full Stack Development
+			          				</div>
+		           			</div>
+		           			<p style="font-family: Oswald">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+												 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+												 type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+												 typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+												 Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						    </div>
+		       </div>
         </div>
-    </div>
-        <div class="row">
-		    <div class="col-sm-4 col-xs-4">
-			    <p style="vertical-align: 50%">Skills:-</p>
-			</div>
-			<div class="col-sm-8 col-xs-8">
-			    <div id=skills_box >
-			    	<div class="skill_boxes" style="border:2px solid #24366D;background-color: #3C5CBA;border-radius: 20px">Html</div>
-			    	<div class="skill_boxes" style="border:2px solid #388E3C;background-color: #145A32;border-radius: 20px">CSS</div>
-			    	<div class="skill_boxes" style="border:2px solid #641E16;background-color: #E74C3C;border-radius: 20px">Javascript</div>
-			    	<div class="skill_boxes" style="border:2px solid #512E5F;background-color: #8E44AD;border-radius: 20px">Android</div>
-			    	<div class="skill_boxes" style="border:2px solid #A04000;background-color: #E67E22;border-radius: 20px">c++</div>
-			    	<div class="skill_boxes" style="border:2px solid #9B5D73;background-color: #C38B8B;border-radius: 20px">c</div>
-			    	<div class="skill_boxes" style="border:2px solid #143A52;background-color: #6E828A;border-radius: 20px">java</div>
-			    	<div class="skill_boxes" style="border:2px solid #FFFFC1;background-color: #FFD2A5;border-radius: 20px">Python</div>
-			    	<div class="skill_boxes" style="border:2px solid #512E5F;background-color: #900C3F;border-radius: 20px">Machine Learning</div>
-			    	<div class="skill_boxes" style="border:2px solid #24366D;background-color: #3C5CBA;border-radius: 20px">hadoop</div>
-			    	<div class="skill_boxes" style="border:2px solid #DC4712;background-color: #EE712B;border-radius: 20px">Data analysis</div>
-			    	<div class="skill_boxes" style="border:2px solid #476269;background-color: #40A798;border-radius: 20px">sql</div>
-			    </div>
-			</div>
-		</div>
-    </div>
 
+        <div id="skills" class ="white_text">
+            <div class="row">
+                <div class="col-sm-12 col-xs-12">
+             		    <h4>Checkout my skills</h4>
+        				</div>
+    				</div>
+        		<div class="row">
+		    		    <div class="col-sm-4 col-xs-4">
+			    			    <p style="vertical-align: 50%">Skills:-</p>
+								</div>
+								<div class="col-sm-8 col-xs-8">
+			    			    <div id=skills_box >
+										    	<div class="skill_boxes" style="border:2px solid #24366D;background-color: #3C5CBA;">Html</div>
+										    	<div class="skill_boxes" style="border:2px solid #388E3C;background-color: #145A32;">CSS</div>
+										    	<div class="skill_boxes" style="border:2px solid #641E16;background-color: #E74C3C;">Javascript</div>
+										    	<div class="skill_boxes" style="border:2px solid #512E5F;background-color: #8E44AD;">Android</div>
+										    	<div class="skill_boxes" style="border:2px solid #A04000;background-color: #E67E22;">c++</div>
+										    	<div class="skill_boxes" style="border:2px solid #9B5D73;background-color: #C38B8B;">c</div>
+										    	<div class="skill_boxes" style="border:2px solid #143A52;background-color: #6E828A;">java</div>
+										    	<div class="skill_boxes" style="border:2px solid #FFFFC1;background-color: #FFD2A5;">Python</div>
+										    	<div class="skill_boxes" style="border:2px solid #512E5F;background-color: #900C3F;">Machine Learning</div>
+										    	<div class="skill_boxes" style="border:2px solid #24366D;background-color: #3C5CBA;">hadoop</div>
+										    	<div class="skill_boxes" style="border:2px solid #DC4712;background-color: #EE712B;">Data analysis</div>
+										    	<div class="skill_boxes" style="border:2px solid #476269;background-color: #40A798;">sql</div>
+									 </div>
+							 </div>
+						</div>
+        </div>
 
-
-    <div id="resume" class ="black_text">
-	    <div class="row">
-		    <div class="col-sm-12 col-xs-12">
-		    	<h4>You can see my resume here...!!</h4>
-			</div>
-		</div>
-		 <p>Download my resume <a href="#" style="color:black;text-decoration: underline"><strong>here</strong></a></p>
-	</div>
-
-
-
-
-<div id="projects" class="white_text">
-	<div class="row">
-		  <div class="col-sm-12 col-xs-12">
-			  <h4>Projects</h4>
-	    </div>
-   </div>
-	 <div class="row" style="margin:5px">
-
-
-
-		  <div class="col-sm-4 test" style="background-color:rgba(255,162,52,.8); border:3px solid black;">
-			   <div clas="row">
-                    <div class="col-sm-12" >
-                         <h3 style="font-family: Abril Fatface;padding-top:5px">Android Project</h3>
-					</div>
+        <div id="resume" class ="black_text">
+	    	    <div class="row">
+		    		    <div class="col-sm-12 col-xs-12">
+		    				    <h4>You can see my resume here...!!</h4>
+								</div>
+		        </div>
+		 				<p>Download my resume <a href="#" style="color:black;text-decoration: underline"><strong>here</strong></a></p>
 				</div>
-				<p style="font-family: FF Meta Serif">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
-				<button type="button" class="btn btn-dark" style="margin-bottom:5px;">View On Github</button>
 
+
+				<div id="projects" class="white_text">
+				    <div class="row">
+		  			    <div class="col-sm-12 col-xs-12">
+			  				    <h4>Projects</h4>
+	    				  </div>
+   				  </div>
+	 					<div class="row" style="margin:5px">
+		  			    <div class="col-sm-4 test" style="background-color:rgba(255,162,52,.8); border:3px solid black;">
+			   				    <div clas="row">
+                        <div class="col-sm-12" >
+                            <h3 style="font-family: Abril Fatface;padding-top:5px">Android Project</h3>
+												</div>
+										</div>
+								<p style="font-family: FF Meta Serif">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+									Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+									 type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+								<button type="button" class="btn btn-dark" style="margin-bottom:5px;">View On Github</button>
+
+		   					</div>
+
+			 					<div class="col-sm-4 test" style="background-color:#3C5CBA;border:3px solid black">
+				 					   <div clas="row">
+										     <div class="col-sm-12">
+												     <h3 style="font-family: Abril Fatface ;padding-top:5px">Data Analysis</h3>
+												 </div>
+				 						 </div>
+				 					 	 <p style="font-family: FF Meta Serif">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+										 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+										 scrambled it to make a type specimen book. It has survived not only five centuries</p>
+ 									 	 <button type="button" class="btn btn-dark" style="margin-bottom:5px;">View On Github</button>
+			 					</div>
+
+			 					<div class="col-sm-4 test" style="background-color:#40A798;border:3px solid black">
+				 				    <div clas="row">
+						 				    <div class="col-sm-12">
+								 				    <h3 style="font-family: Abril Fatface ;padding-top:5px">Computer Vision</h3>
+												</div>
+				 						</div>
+				 					  <p style="font-family: FF Meta Serif">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+										 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+										 type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+						        <button type="button" class="btn btn-dark" style="margin-bottom:5px;">View On Github</button>
+			 					</div>
+
+		        </div>
 		   </div>
 
+       <div id="contact" class ="white_text">
+           <div class="col-sm-12 col-xs-12">
+                <h4>Any Queries</h4>
+          </div>
+    	    <div class="row">
+			        <div class="col-sm-6 col-xs-6">
+			            <p>Contact :- <b>+917060915094</b></p>
+				    			<p>Hire me :- Mail me at <b>varun1907@gmail.com</b></p>
+			    		</div>
+			    		<div class="col-sm-6 col-xs-6">
+			    		    <div class="row">
+			    				    <div class="col-sm-12 col-xs-12"><h3>Questions?Submit Your Response<h3></div>
+			    				</div>
+									<div id ="contact_form" style="padding-right: 5px;margin-bottom: 5px">
+													<form method="post" action="{% url 'varun:submit_form' %}" role="form" stype>
+										     {% csrf_token %}
+									    <div class="form-row">
+										      <div class="form-group col-md-6" >
+										        <label for="{{ form.name.id_for_label }}">Name</label>
+														{{ form.name }}
+										      </div>
+									      <div class="form-group col-md-6">
+										        <label for="{{ form.email.id_for_label }}">Email</label>
+														{{ form.email }}
+										      </div>
+										    </div>
+										    <div class="form-group">
+										      <label for="{{ form.question.id_for_label }}">Query</label>
+													{{ form.question }}
+										    </div>
+										    <div class="form-row">
+										      <div class="form-group col-md-6">
+										        <label for="{{ form.city.id_for_label }}">City</label>
+														{{ form.city }}
+										      </div>
+												</div>
+										    <button type="submit" class="btn btn-primary">Submit</button>
+										</form>
 
-
-
-
-
-			 <div class="col-sm-4 test" style="background-color:#3C5CBA;border:3px solid black">
-
-
-				 <div clas="row">
-						<div class="col-sm-12">
-								<h3 style="font-family: Abril Fatface ;padding-top:5px">Data Analysis</h3>
-						</div>
-				 </div>
-				 <p style="font-family: FF Meta Serif">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-				 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-				 scrambled it to make a type specimen book. It has survived not only five centuries</p>
-
-				  <button type="button" class="btn btn-dark" style="margin-bottom:5px;">View On Github</button>
-			 </div>
-
-
-
-
-
-
-
-			 <div class="col-sm-4 test" style="background-color:#40A798;border:3px solid black">
-				 <div clas="row">
-						 <div class="col-sm-12">
-								 <h3 style="font-family: Abril Fatface ;padding-top:5px">Computer Vision</h3>
-						</div>
-				 </div>
-				 <p style="font-family: FF Meta Serif">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-					 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-					 type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
-	              <button type="button" class="btn btn-dark" style="margin-bottom:5px;">View On Github</button>
-			 </div>
-
-		</div>
-
-
-
-
-
-
-</div>
-
-
-    <div id="contact" class ="white_text">
-        <div class="col-sm-12 col-xs-12">
-             <h4>Any Queries</h4>
-        </div>
-
-
-    	 <div class="row">
-			    <div class="col-sm-6 col-xs-6">
-			      <p>Contact :- <b>+917060915094</b></p>
-				    <p>Hire me :- Mail me at <b>varun1907@gmail.com</b></p>
-			    </div>
-			    <div class="col-sm-6 col-xs-6">
-			    <div class="row">
-			    	<div class="col-sm-12 col-xs-12"><h3>Questions?Submit Your Response<h3></div>
-			    </div>
-					<div id ="contact_form" style="padding-right: 5px;margin-bottom: 5px">
-						<form method="post" action="{% url 'varun:submit_form' %}" role="form" stype>
-						     {% csrf_token %}
-					    <div class="form-row">
-						      <div class="form-group col-md-6" >
-						        <label for="{{ form.name.id_for_label }}">Name</label>
-										{{ form.name }}
-						<!--        <input type="text" class="form-control" id="name" placeholder="Name">    -->
-						      </div>
-					      <div class="form-group col-md-6">
-						        <label for="{{ form.email.id_for_label }}">Email</label>
-										{{ form.email }}
-					<!--	        <input type="text" class="form-control" id="email" placeholder="Email">     -->
-						      </div>
-						    </div>
-						    <div class="form-group">
-						      <label for="{{ form.question.id_for_label }}">Query</label>
-									{{ form.question }}
-				<!--		      <input type="text" class="form-control" id="question" placeholder="Ask your Question">    -->
-						    </div>
-						    <div class="form-row">
-						      <div class="form-group col-md-6">
-						        <label for="{{ form.city.id_for_label }}">City</label>
-										{{ form.city }}
-				<!--		        <input type="text" class="form-control" id="city" placeholder="City">     -->
-						      </div>
-								</div>
-						    <button type="submit" class="btn btn-primary">Submit</button>
-						</form>
-
-				 </div>
+				         </div>
 		        </div>
 		    </div>
     </div>
@@ -238,16 +201,16 @@
 
 
 
-<footer id="the_footer" class ="black_text">
-	<a href="https://www.facebook.com/varun.gupta.3785373" target="_blank" class="fa fa-facebook"></a>
-	<a href="#" target="_blank" class="fa fa-linkedin"></a>
-	<a href="https://plus.google.com/u/0/109531738164712542209" target="_blank" class="fa fa-google"></a>
-	<a href="https://www.instagram.com/varun3900/?hl=en" target="_blank" class="fa fa-instagram"></a>
-	<a href="https://github.com/varun1907" target="_blank" class="fa fa-github"></a>
-    <p>Copyright Varun Gupta  2017</p>
+    <footer id="the_footer" class ="black_text">
+					<a href="https://www.facebook.com/varun.gupta.3785373" target="_blank" class="fa fa-facebook"></a>
+					<a href="#" target="_blank" class="fa fa-linkedin"></a>
+					<a href="https://plus.google.com/u/0/109531738164712542209" target="_blank" class="fa fa-google"></a>
+					<a href="https://www.instagram.com/varun3900/?hl=en" target="_blank" class="fa fa-instagram"></a>
+					<a href="https://github.com/varun1907" target="_blank" class="fa fa-github"></a>
+				   <p>Copyright Varun Gupta  2017</p>
 
-</footer>
-<button type="button" onclick="toTop()" class="btn btn-dark"  style="position:fixed;bottom:0;right:0;">Go To top</button>
+    </footer>
+    <button type="button" onclick="toTop()" class="btn btn-dark"  style="position:fixed;bottom:0;right:0;">Go To top</button>
 
 </div>
 

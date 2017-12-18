@@ -16,7 +16,6 @@ body{
 }
 #big_wrapper{
 	text-align: left;
-
 }
 #the_header{
 		margin: 10px;
@@ -100,7 +99,11 @@ margin: auto;
 }
 
 
-
+.interest{
+	font-family: Georgia;
+	font-weight: bold;
+	font-size: 1.5em;
+}
 
 
 #skills{
@@ -122,6 +125,7 @@ margin: auto;
 	position: relative;
 	top: 0;
 	transition: top ease 0.5s;
+	border-radius: 20px;
 }
 .skill_boxes:hover{
 	opacity: 1;
