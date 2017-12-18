@@ -13,7 +13,6 @@ body{
 	color:white;
 	background-image: url("http://wallscollection.net/wp-content/uploads/2016/12/Amazing-Background-Images-For-Websites-.jpg")no-repeat center fixed (same shorthand parameter, if any);
   background-size: cover;
-
 }
 #big_wrapper{
 	text-align: left;
@@ -62,14 +61,32 @@ p{
 	color:white;
 }
 #about{
-	padding-top: 40px;
 	margin: 10px;
 	background-color: #F2F2EC;
+
 }
 h3{
 	text-align: center;
 }
-#about img{
+
+.ig{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:100%;
+	max-height:650px;
+	z-index: -1;
+}
+
+#arrow{
+	height: 80px;
+	position: relative;
+	top:-150px;
+	left:400px;
+display: inline-block;
+margin: auto;
+}
+#bg-img{
 	height:400px;
 	width: 400px;
 	border-radius: 50%;
@@ -135,8 +152,7 @@ h3{
 
 #projects{
 	margin: 10px;
-	background-color:   rgba(26,26,26,.75);
-
+	background-color: rgba(26,26,26,.75);
 }
 
 

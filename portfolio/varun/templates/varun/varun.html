@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	 {% load staticfiles %}
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald">
-
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
 	 integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <link rel="stylesheet" href="{% static "varun/varun.css" %} ">
+  <link rel="stylesheet" href="{% static 'varun/varun.css' %} ">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="{% static 'varun/varun.js' %} "></script>
 </head>
 <body>
 
@@ -20,26 +20,33 @@
 
  <header id="the_header">
 	<ul id="foo">
-	<li><a href="#about">ABOUT</a></li>
-	<li><a href="#skills">SKILLS</a></li>
-	<li><a href="#resume">RESUME</a></li>
-	<li><a href="#projects">PROJECTS</a></li>
-	<li><a href="#contact">CONTACT</a></li>
+	<li><a onclick="initScroll('about'); return false;" href="#">ABOUT</a></li>
+	<li><a onclick="initScroll('skills'); return false;" href="#">SKILLS</a></li>
+	<li><a onclick="initScroll('resume'); return false;" href="#">RESUME</a></li>
+	<li><a onclick="initScroll('projects'); return false;" href="#">PROJECTS</a></li>
+	<li><a onclick="initScroll('contact'); return false;" href="#">CONTACT</a></li>
 	</ul>
  </header>
+
 
 
  <div id ="main_section">
 
  	<div id="about" class ="black_text">
- 			<div class="row">
+
+	<!--	<img src="static/varun/images/back.jpg" style="display:block;width:100%;height:auto"/>-->
+			<img src="static/varun/images/back2.jpg" class="ig"/>
+				<div class="col-sm-6 text-center">
+		      	<button type="button" onclick="scrollWin()" class="btn btn-dark" id="arrow" style="margin-bottom:5px;">Click Me</button>
+	    </div>
+			<div class="row">
  			<div class="col-sm-12">
  	       <h4>Something you should know</h4>
 			</div>
 			</div>
 			<div class="row">
 			    <div class="col-sm-5 col-xs-5">
-			      <img src="static/varun/images/IMG_20170319_234438.jpg" class="rounded-circle" alt="Responsive image"/>
+			      <img src="static/varun/images/IMG_20170319_234438.jpg" id="bg-img" class="rounded-circle" alt="Responsive image"/>
 			    </div>
 			    <div class="col-sm-7 col-xs-7">
 			      <div class="row">
@@ -115,35 +122,47 @@
 	    </div>
    </div>
 	 <div class="row" style="margin:5px">
-		  <div class="col-sm-4 test" style="background-color:#EE712B; border:3px solid black">
-					<div clas="row">
-             <div class="col-sm-12" >
-                 <h3 style="font-family: Abril Fatface;padding-top:5px">Android Project</h3>
-						 </div>
+
+
+
+		  <div class="col-sm-4 test" style="background-color:rgba(255,162,52,.8); border:3px solid black;">
+			   <div clas="row">
+                    <div class="col-sm-12" >
+                         <h3 style="font-family: Abril Fatface;padding-top:5px">Android Project</h3>
 					</div>
-					<div clas="row">
-             <div class="col-sm-12">
-							 <p style="font-family: FF Meta Serif">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-								Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-								type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+				</div>
+				<p style="font-family: FF Meta Serif">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+				<button type="button" class="btn btn-dark" style="margin-bottom:5px;">View On Github</button>
 
-						 </div>
-					</div>
+		   </div>
 
-					<button type="button" class="btn btn-dark" style="margin-bottom:5px;">View On Github</button>
 
-			 </div>
+
+
+
+
 			 <div class="col-sm-4 test" style="background-color:#3C5CBA;border:3px solid black">
+
+
 				 <div clas="row">
 						<div class="col-sm-12">
 								<h3 style="font-family: Abril Fatface ;padding-top:5px">Data Analysis</h3>
 						</div>
 				 </div>
 				 <p style="font-family: FF Meta Serif">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-					 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-					 type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
-					 	<button type="button" class="btn btn-dark" >View On Github</button>
+				 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+				 scrambled it to make a type specimen book. It has survived not only five centuries</p>
+
+				  <button type="button" class="btn btn-dark" style="margin-bottom:5px;">View On Github</button>
 			 </div>
+
+
+
+
+
+
+
 			 <div class="col-sm-4 test" style="background-color:#40A798;border:3px solid black">
 				 <div clas="row">
 						 <div class="col-sm-12">
@@ -153,7 +172,7 @@
 				 <p style="font-family: FF Meta Serif">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 					 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
 					 type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
-	       <button type="button" class="btn btn-dark" >View On Github</button>
+	              <button type="button" class="btn btn-dark" style="margin-bottom:5px;">View On Github</button>
 			 </div>
 
 		</div>
@@ -228,8 +247,10 @@
     <p>Copyright Varun Gupta  2017</p>
 
 </footer>
+<button type="button" onclick="toTop()" class="btn btn-dark"  style="position:fixed;bottom:0;right:0;">Go To top</button>
 
 </div>
+
 
 </body>
 </html>
