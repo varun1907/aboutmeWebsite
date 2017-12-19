@@ -21,18 +21,19 @@
 <div class="container-fluid" style="background-color: #262626;">
 										<div class="jumbotron" style="padding: 0px;">
 										<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-										  <a class="navbar-brand" href="#">Varun Gupta</a>
-										  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+										  <a class="navbar-brand" href="#" style="font-size:1.5em">Varun Gupta</a>
+										  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+											aria-controls="navbarNavAltMarkup"
 											 aria-expanded="false" aria-label="Toggle navigation">
 										    <span class="navbar-toggler-icon"></span>
 										  </button>
 										  <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
 										    <div class="navbar-nav" >
-										      <a class="nav-item nav-link" onclick="initScroll('about'); return false;" href="#">About</a>
-										      <a class="nav-item nav-link" onclick="initScroll('skills'); return false;" href="#">Skills</a>
-										      <a class="nav-item nav-link" onclick="initScroll('resume'); return false;" href="#">Resume</a>
-										      <a class="nav-item nav-link" onclick="initScroll('projects'); return false;" href="#">Projects</a>
-										      <a class="nav-item nav-link" onclick="initScroll('contact'); return false;" href="#">Contact</a>
+													<a class="nav-item nav-link" onclick="return false;" onmousedown="autoScrollTo('about');" href="#">About</a>
+												 <a class="nav-item nav-link" onclick="return false;" onmousedown="autoScrollTo('skills');" href="#">Skills</a>
+												 <a class="nav-item nav-link" onclick="return false;" onmousedown="autoScrollTo('resume');" href="#">Resume</a>
+												 <a class="nav-item nav-link" onclick="return false;" onmousedown="autoScrollTo('projects');" href="#">Projects</a>
+												 <a class="nav-item nav-link" onclick="return false;" onmousedown="autoScrollTo('contact');" href="#">Contact</a>
 										    </div>
 
 										</div>
@@ -46,7 +47,7 @@
 															<h1 style="font-weight:700;font-size:6em;text-transform:uppercase;font-family:proxima-nova">Varun Gupta</h1>
 
 														<div>
-																<button type="button" onclick="scrollWin()" class="btn btn-dark btn-lg" id="arrow">Read More About Me</button>
+																<button type="button" onclick="return false;" onmousedown="autoScrollTo('about');" class="btn btn-dark btn-lg" id="arrow">Read More About Me</button>
 														</div>
 											</div>
 

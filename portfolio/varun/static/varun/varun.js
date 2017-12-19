@@ -4,19 +4,33 @@ var destination=0;
 var speed=8;
 var scroller=null;
 
-function initScroll(elementId){
-	 destination=document.getElementById(elementId).offsetTop;
-		 scroller=setTimeout(function(){
-		 initScroll(elementId)
-	 },1);
-	 marginY = marginY + speed;
 
-	 if(marginY >= destination){
-		 clearTimeout(scroller);
-	 }
-	 window.scroll(0,marginY);
 
-}
+var scrollY=0;
+var distance=40;
+var s=24;
+function autoScrollTo(elementId){
+
+		var currentY=window.pageYOffset;
+		var targetY=document.getElementById(elementId).offsetTop;
+		var bodyHeight=document.body.offsetHeight;
+		var yPos=currentY + window.innerHeight;
+
+		var animator=setTimeout('autoScrollTo(\''+elementId+'\')',s);
+		 if(yPos > bodyHeight)
+		 {
+			 clearTimeout(animator);
+		 }
+		 else {
+		 	    if(currentY < targetY-distance){
+						scrollY = currentY + distance;
+						window.scroll(0,scrollY);
+					}else {
+						clearTimeout(animator);
+					}
+			}
+		 }
+
 
 function toTop(){
 
@@ -33,18 +47,28 @@ function toTop(){
 
 		 window.scroll(0,x);
 }
+
+
+
 function scrollWin()
 {
-	scroller=setTimeout(function(){
-			scrollWin();
-	},1);
 
-	marginY = marginY + speed;
+	var currentY=window.pageYOffset;
+	var targetY=document.getElementById(elementId).offsetTop;
+	var bodyHeight=document.body.offsetHeight;
+	var yPos=currentY + window.innerHeight;
 
-	if(marginY >= screen.height){
-		clearTimeout(scroller);
-	}
-
-	window.scroll(0,marginY);
-
-}
+	var animator=setTimeout('autoScrollTo(\''+elementId+'\')',s);
+	 if(yPos > bodyHeight)
+	 {
+		 clearTimeout(animator);
+	 }
+	 else {
+				if(currentY < targetY-distance){
+					scrollY = currentY + distance;
+					window.scroll(0,scrollY);
+				}else {
+					clearTimeout(animator);
+				}
+		}
+	 }
