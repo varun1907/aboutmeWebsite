@@ -28,7 +28,7 @@ h4{
 p{
 	padding:20px;
 	font-size: 20px;
-
+font-family: Helvetica;
 }
 
 .black_text{
@@ -138,6 +138,12 @@ h3{
 
 }
 
+.git a{
+	color:white;
+}
+.git a:hover{
+text-decoration: none;
+}
 
 .test {
   position: relative;

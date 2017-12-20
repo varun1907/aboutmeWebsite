@@ -4,16 +4,16 @@
 
 
 
-{% block header %}
+{% block message %}
 
 {% if messages %}
-<div class="row">
+<div class="row" style="position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);z-index:500">
  <div class="col-sm-12 ">
  {% for message in messages %}
 
    <div{% if message.tags == "error" %} class="alert alert-danger alert-dismissable" {% endif %}>
-   <a href="{% url 'varun:index' %}" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-     <strong>Error</strong>{{ message }}</div>
+   <a href="{% url 'varun:index' %}" class="close" data-dismiss="alert" aria-label="close">&nbsp;&nbsp;&nbsp;&times;</a>
+     <strong>Error&nbsp;&nbsp;</strong>{{ message }}</div>
 
  {% endfor %}
 </div>
